@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My Book Store - CuongTQ</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <div class="divBig">
+            <div class="divCover">
+                <div id="divCoverImage">
+                    <img id="coverImage" src="/Content/Images/BookCover.jpg" />
+                </div>
+                <div id="divCoverButton">
+                    <button class="myButton" onclick="location.href = @Html.ActionLink("Book","Index","Book")">Home</button>
+                    <button class="myButton">About</button>
+                </div>
+            </div>
+            <div class="divContent">
+                <div id="divLeft">
+                    <div id="divContentLogin">
+                        @*<form class="loginForm">
+                            <input type="text" placeholder="User name" class="loginTextbox"><br>
+                            <input type="password" placeholder="******" class="loginTextbox"><br>
+                            <input type="submit" value="Sign In" id="loginSignIn"><br>
+                        </form>*@
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                    <div id="divContentCategory">
+                        <div id="divCategoryHeader">
+                            Categories
+                        </div>
+                        <div id="divCategoryContent">
+                            @Html.Partial("_Categories")
+                            @*<ul id="category">
+                                <a href="#" onclick="myFunction(this.text)"><li>All</li></a>
+                                <a href="#" onclick="myFunction(this.text)"><li>Children books</li></a>
+                                <a href="#" onclick="myFunction(this.text)"><li>Bussiness books</li></a>
+                                <a href="#" onclick="myFunction(this.text)"><li>Literature books</li></a>
+                                <a href="#" onclick="myFunction(this.text)"><li>Music books</li></a>
+                                <a href="#" onclick="myFunction(this.text)"><li>Technology books</li></a>
+                            </ul>*@
+                        </div>
+                    </div>
+                </div>
+                <div id="divContentNews">
+                    <div class="divNewsHeader">Bussiness Books</div>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(text) {
+                document.getElementsByClassName("divNewsHeader")[0].innerHTML = text;
+            }
+        </script>
+     
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

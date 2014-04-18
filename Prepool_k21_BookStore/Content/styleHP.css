@@ -1,0 +1,176 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.divBig{
+   width: 1024px;
+   text-align: center;
+   margin:10px auto;
+}
+#divCoverButton{
+    height: 50px;
+    text-align: center;
+    background-color: #312116;
+}
+#divCoverImage{
+   height: 200px;
+}
+#coverImage{
+    width: 1024px;
+    height: 200px;
+}
+
+.myButton{
+    width: 100px;
+    border-radius: 7px;
+    background-color: #fdffd8;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.divContent{
+    height: 600px;
+    padding-bottom: 10px;
+    background-color: #fff69a;
+}
+#divLeft{
+    float: left;
+    width: 19%;
+    /*margin-top: 1%;*/
+    padding-top: 1%;
+    padding-left: 2%;
+    height: 98%;
+    border-right-style: dotted;
+    border-right-width:1px;
+    
+    /*background-color: #fff69a;*/
+}
+#divContentLogin{
+    width: 90%;
+    height: 20%;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 10px;
+    border-color: #312116;
+}
+
+.loginForm .loginTextbox{
+   width: 90%;
+   height: 15%;
+   float:left;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   margin-left: 4%;
+   border-color: #312116;
+}
+
+.loginForm{
+    
+   text-align:center;
+}
+#loginSignIn{
+   margin-top: 2%;
+   margin-bottom:2%;
+   width: 10%;
+   float:left;
+   border-radius: 7px;
+   background-color: #410fff;
+   color: white;
+   font-size: 15px;
+}
+#divContentNews{
+    float: right;
+    width: 77%;
+    height: 98%;
+    padding-top: 1%;
+    padding-right: 1%;
+    /*background-color: #fff69a;*/
+}
+#divContentCategory{
+    width: 90%;
+    height: 40%;
+    border-style:solid;
+    border-width:1px;
+    border-radius: 10px;
+    margin-top: 4%;
+    text-align: left;
+    border-color: #312116;
+}
+#divCategoryHeader{
+    background-color:#312116;
+    color: white;
+    height: 10%;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+#category{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+#divFooter{
+    height: 40px;
+    width: 1024px;
+    background-color: #312116;
+    padding-top: 1%;
+}
+
+.divNewsHeader{
+    color: deepskyblue;
+    height: 2%;
+    font-family: sans-serif;
+    font-size: 97%;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+.myNewsItem{
+    height: 23%;
+    border-style: dotted;
+    border-width:1px;
+    margin-top: 1%;
+}
+.myNewsHeader{
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+    height: 10%;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.myNewsDetails{
+    height:80%;
+    border-style: dotted;
+    border-width:1px;
+    margin-top: 1%;
+}
+
+.myNewsContent{
+    padding-top: 10px;
+    text-align: left;
+    margin: 10px;
+}
+.myNewsDescription{
+    padding-top: 10px;
+    text-align: left;
+    margin: 10px;
+}
+.myNewsAthour{
+    height: 30%;
+    /*float:right;*/
+    text-align: right;
+    margin-right: 10px;
+}
+.labelBold{
+   font-weight: bold;
+}
+#myDetailimage{
+   width:100px;
+   height:150px;
+   margin-left:10px;
+   float:left;
+
+}
+a{
+    text-decoration: none;
+}
